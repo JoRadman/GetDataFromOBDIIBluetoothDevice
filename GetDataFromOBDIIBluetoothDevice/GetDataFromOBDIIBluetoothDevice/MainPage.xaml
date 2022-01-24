@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GetDataFromOBDIIBluetoothDevice.MainPage">
+
+    <StackLayout>
+        <ScrollView>
+            <StackLayout>
+
+                <Picker x:Name="pi_OBDIIDevices" TextColor="Black" VerticalOptions="Center" SelectedIndexChanged="pi_OBDIIDevices_SelectedIndexChanged"/>
+                <Entry x:Name="en_DeviceMacAdress" Placeholder="MAC adress" IsEnabled="False"/>
+
+                <Button x:Name="btn_StartCollecting" Text="Test" Clicked="btn_StartCollecting_Clicked" Margin="0,0,0,20"/>
+
+                <Label Text="Engine coolant temperature" FontSize="10" HorizontalTextAlignment="Start"/>
+                <Entry x:Name="en_EngineCoolantTemperature" Margin="0,0,0,20"/>
+
+                <Label Text="Engine speed"  FontSize="10" HorizontalTextAlignment="Start"/>
+                <Entry x:Name="en_EngineSpeed" Margin="0,0,0,20"/>
+
+                <Label Text="Vehicle speed"  FontSize="10" HorizontalTextAlignment="Start"/>
+                <Entry x:Name="en_VehicleSpeed" Margin="0,0,0,20"/>
+
+                <Label Text="Intake air temperature"  FontSize="10" HorizontalTextAlignment="Start"/>
+                <Entry x:Name="en_IntakeAirTemperature" Margin="0,0,0,20"/>
+
+                <Label Text="MAF"  FontSize="10" HorizontalTextAlignment="Start"/>
+                <Entry x:Name="en_MAF" Margin="0,0,0,20"/>
+            </StackLayout>
+
+        </ScrollView>
+
+    </StackLayout>
+
+</ContentPage>
